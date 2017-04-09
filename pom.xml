@@ -6,14 +6,7 @@
   
   <build>
     <plugins>
-        <!-- <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <configuration>
-            <warName>Akurav9</warName>
-                <outputDirectory>C:\Users\user\Desktop\</outputDirectory>
-            </configuration>
-        </plugin> -->
+      
         <plugin>
   <artifactId>maven-antrun-plugin</artifactId>
   <version>1.8</version>
@@ -22,7 +15,7 @@
       <phase>package</phase>
       <configuration>
         <target>
-          <copy file="target/Akurav9.war"
+          <copy file="target/ROOT.war"
                 todir="${EAP_HOME}/standalone/deployments/" />
         </target>
       </configuration>
